@@ -1,10 +1,11 @@
 {
   "name": "phases",
-  "version": "0.0.0",
+  "version": "0.0.0-2",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "watchify  ./main.js -o ./public/javascripts/main.js -v",
+    "start": "node app.js",
+    "build": "watchify  ./main.js -o ./public/javascripts/main.js -v",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,5 +16,9 @@
   "devDependencies": {
     "browserify": "^7.0.1",
     "watchify": "^2.2.1"
+  },
+  "subdomain": "pete",
+  "engines": {
+    "node": "0.10.x"
   }
 }
